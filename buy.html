@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="buy.css">
+    <script src="https://smtpjs.com/v3/smtp.js"></script> <!-- For sending emails -->
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Checkout</h1>
+        </header>
+        <div class="content">
+            <section class="checkout-form">
+                <h2>Billing Details</h2>
+                <form id="checkoutForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Address</label>
+                        <textarea id="address" name="address" rows="3" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="pincode">Pincode</label>
+                        <input type="text" id="pincode" name="pincode" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="state">State</label>
+                        <input type="text" id="state" name="state" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="landmark">Landmark</label>
+                        <input type="text" id="landmark" name="landmark">
+                    </div>
+                    <h3>Payment Method</h3>
+                    <div class="payment-options">
+                        <div>
+                            <input type="radio" id="upi" name="payment" value="UPI" checked>
+                            <label for="upi">UPI</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="cod" name="payment" value="COD">
+                            <label for="cod">Cash on Delivery</label>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn">Place Order</button>
+                </form>
+            </section>
+            <section class="product-image">
+                <img src="infoform.jpg" alt="Product Image">
+            </section>
+        </div>
+    </div>
+    <script src="buy.js"></script>
+</body>
+</html>
